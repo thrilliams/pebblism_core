@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "create_enchancement",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create: Enchancement",
+  "description": "improves compatability between Create and Enchancement",
   "authors": [
-    "Me!"
+    "juniper williams"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/thrilliams/create_enchancement"
   },
   "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/create_enchancement/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "co.aethre.create_enchancement.CreateEnchancement"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "create_enchancement.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
