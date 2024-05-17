@@ -4,7 +4,7 @@
   "package": "co.aethre.create_enchancement.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "BacktankUtilMixin"
+    "EnchantmentHelperMixin"
   ],
   "client": [
   ],
