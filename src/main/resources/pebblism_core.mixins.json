@@ -1,10 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "co.aethre.create_enchancement.mixin",
+  "package": "co.aethre.pebblism_core.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "EnchantmentHelperMixin"
+    "EnchantmentHelperMixin",
+    "NetheriteDivingHandlerMixin",
+    "TridentItemMixin"
   ],
   "client": [
   ],

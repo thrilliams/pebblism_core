@@ -1,31 +1,34 @@
 {
   "schemaVersion": 1,
-  "id": "create_enchancement",
+  "id": "pebblism_core",
   "version": "${version}",
-  "name": "Create: Enchancement",
-  "description": "improves compatability between Create and Enchancement",
+  "name": "Pebblism Core",
+  "description": "compatability~!",
   "authors": [
     "juniper williams"
   ],
   "contact": {
-    "sources": "https://github.com/thrilliams/create_enchancement"
+    "sources": "https://github.com/thrilliams/pebblism_core"
   },
   "license": "CC0",
-  "icon": "assets/create_enchancement/icon.png",
+  "icon": "assets/pebblism_core/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "co.aethre.create_enchancement.CreateEnchancement"
+      "co.aethre.pebblism_core.PebblismCore"
     ]
   },
   "mixins": [
-    "create_enchancement.mixins.json"
+    "pebblism_core.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
     "fabric-api": ">=${fabric_api_version}",
     "create": ">=${create_version}",
     "enchancement": ">=${enchancement_version}",
+    "deeperdarker": ">=${deeper_and_darker_version}",
+    "betterarcheology": ">=${better_archeology_version}",
+    "charmofundying": "*",
     "minecraft": "${minecraft_version}"
   }
 }

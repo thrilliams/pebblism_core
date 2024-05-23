@@ -1,4 +1,4 @@
-package co.aethre.create_enchancement.mixin;
+package co.aethre.pebblism_core.mixin;
 
 import com.simibubi.create.AllEnchantments;
 
@@ -14,16 +14,18 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(EnchantmentHelper.class)
 abstract class EnchantmentHelperMixin {
+	// i would rather this were a redirect for the backtank item, but there was some lambda nonsense going on, and my
+	// understanding of mixins is remedial at best. if i can change this, i would like to.
 	@Inject(
 			at = @At("HEAD"),
 			method = "getItemEnchantmentLevel",
 			cancellable = true
 	)
-	private static void create_enchancement$getItemEnchantmentLevel(Enchantment enchantment, ItemStack stack, CallbackInfoReturnable<Integer> callback) {
+	private static void pebblism_core$getItemEnchantmentLevel(Enchantment enchantment, ItemStack stack, CallbackInfoReturnable<Integer> ci) {
 		Enchantment capacity = AllEnchantments.CAPACITY.get();
 		// if the enchantment in question is capacity and the item in question has amphibious, treat the item as having max capacity
 		if (enchantment.equals(capacity) && EnchantmentHelper.getItemEnchantmentLevel(ModEnchantments.AMPHIBIOUS, stack) > 0) {
-			callback.setReturnValue(capacity.getMaxLevel());
+			ci.setReturnValue(capacity.getMaxLevel());
 		}
 	}
 }

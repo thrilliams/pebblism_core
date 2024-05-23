@@ -1,13 +1,13 @@
-package co.aethre.create_enchancement;
+package co.aethre.pebblism_core;
 
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CreateEnchancement implements ModInitializer {
-	public static final String ID = "create_enchancement";
-	public static final String NAME = "Create: Enchancement";
+public class PebblismCore implements ModInitializer {
+	public static final String ID = "pebblism_core";
+	public static final String NAME = "Pebblism Core";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
 	@Override

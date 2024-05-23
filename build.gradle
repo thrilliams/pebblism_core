@@ -2,7 +2,7 @@
 //file:noinspection GroovyAccessibility
 //file:noinspection GradlePackageVersionRange
 plugins {
-	id "fabric-loom" version "1.5.+"
+	id "fabric-loom" version "1.6.+"
 	id "io.github.p03w.machete" version "1.+" // automatic jar compressing on build
 	id "maven-publish"
 }
@@ -33,6 +33,8 @@ repositories {
 	maven { url = "https://maven.tterrag.com/" } // Flywheel
 	maven { url = 'https://maven.ladysnake.org/releases' } // Cardinal Component API
 	maven { url = "https://api.modrinth.com/maven" } // Enchancement
+	maven { url = "https://maven.kyrptonaught.dev" } // Custom Portal API
+	maven { url = "https://maven.quiltmc.org" } // Quilt Parsers
 }
 
 configurations.configureEach {
@@ -66,6 +68,22 @@ dependencies {
 	modImplementation("com.github.emilyploszaj:step-height-entity-attribute:${step_height_entity_attribute_version}")
 	modImplementation("maven.modrinth:enchancement:${enchancement_version}")
 
+	// Deeper and Darker
+	implementation("org.quiltmc.parsers:json:${quilt_parsers_version}")
+	implementation("org.quiltmc.parsers:gson:${quilt_parsers_version}")
+	modImplementation("maven.modrinth:yacl:${yacl_version}")
+	modImplementation("net.kyrptonaught:customportalapi:${customportalapi_version}")
+	modImplementation("maven.modrinth:deeperdarker:${deeper_and_darker_version}")
+
+	// Better Archeology
+	implementation("org.reflections:reflections:0.10.2")
+	modImplementation("maven.modrinth:yungs-api:${yungs_api_version}")
+	modImplementation("maven.modrinth:better-archeology:${better_archeology_version}")
+
+	// Charm of Undying
+	modImplementation("maven.modrinth:trinkets:${trinkets_version}")
+	modLocalRuntime("maven.modrinth:charm-of-undying:${charm_of_undying_version}")
+
 	// Development QOL
 	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
 	modLocalRuntime("com.terraformersmc:modmenu:${modmenu_version}")
@@ -80,6 +98,8 @@ processResources {
 			"fabric_api_version", fabric_api_version,
 			"create_version", create_version,
 			"enchancement_version", enchancement_version,
+			"deeper_and_darker_version", deeper_and_darker_version,
+			"better_archeology_version", better_archeology_version,
 			"minecraft_version", minecraft_version,
 	)
 
