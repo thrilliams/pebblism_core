@@ -4,6 +4,7 @@
   "package": "co.aethre.pebblism_core.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AssemblySpoutingMixin",
     "EnchantmentHelperMixin",
     "NetheriteDivingHandlerMixin",
     "ToastComponentMixin",

@@ -29,6 +29,7 @@
     "deeperdarker": ">=${deeper_and_darker_version}",
     "betterarcheology": ">=${better_archeology_version}",
     "charmofundying": "*",
+    "roughlyenoughitems": ">=${rei_version}",
     "minecraft": "${minecraft_version}"
   }
 }

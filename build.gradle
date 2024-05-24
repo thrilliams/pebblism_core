@@ -84,10 +84,12 @@ dependencies {
 	modImplementation("maven.modrinth:trinkets:${trinkets_version}")
 	modLocalRuntime("maven.modrinth:charm-of-undying:${charm_of_undying_version}")
 
+	// REI
+	modImplementation("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}")
+
 	// Development QOL
 	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
 	modLocalRuntime("com.terraformersmc:modmenu:${modmenu_version}")
-	modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}")
 }
 
 processResources {
@@ -100,6 +102,7 @@ processResources {
 			"enchancement_version", enchancement_version,
 			"deeper_and_darker_version", deeper_and_darker_version,
 			"better_archeology_version", better_archeology_version,
+			"rei_version", rei_version,
 			"minecraft_version", minecraft_version,
 	)
 
