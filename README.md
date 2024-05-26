@@ -7,3 +7,4 @@ This mod was written to improve compatability for the Pebblism 3 modpack, and do
 - Allow Riptide Tridents to be used regardless of conditions when the player equips a Totem of Torrents from Better Archeology in their Charm slot
 - Remove tutorial toasts
 - Fix a bug with Create rendering Sequenced Assemblies that contain more than one fluid ingredient in REI
+- Add a gamerule that disables mob explosion block damage (`doMobExplosionBlockDamage`)

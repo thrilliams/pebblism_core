@@ -6,6 +6,7 @@
   "mixins": [
     "AssemblySpoutingMixin",
     "EnchantmentHelperMixin",
+    "LevelMixin",
     "NetheriteDivingHandlerMixin",
     "ToastComponentMixin",
     "TridentItemMixin"
