@@ -1,13 +1,12 @@
 package co.aethre.pebblism_core;
 
-import net.fabricmc.api.ModInitializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.gamerule.v1.GameRuleFactory;
 import net.fabricmc.fabric.api.gamerule.v1.GameRuleRegistry;
 import net.minecraft.world.level.GameRules;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class PebblismCore implements ModInitializer {
 	public static final String ID = "pebblism_core";
@@ -23,6 +22,5 @@ public class PebblismCore implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("get ready to rock and roll idiots");
 	}
 }

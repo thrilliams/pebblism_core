@@ -6,6 +6,7 @@
   "mixins": [
     "AssemblySpoutingMixin",
     "EnchantmentHelperMixin",
+    "EstrogenClientEventsMixin",
     "LevelMixin",
     "NetheriteDivingHandlerMixin",
     "ToastComponentMixin",
