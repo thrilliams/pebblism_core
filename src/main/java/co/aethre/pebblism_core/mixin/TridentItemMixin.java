@@ -1,19 +1,14 @@
 package co.aethre.pebblism_core.mixin;
 
-import dev.emi.trinkets.api.TrinketComponent;
-import dev.emi.trinkets.api.TrinketsApi;
-import net.Pandarix.betterarcheology.item.TorrentTotemItem;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.TridentItem;
+import static net.Pandarix.betterarcheology.item.ModItems.TORRENT_TOTEM;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-import java.util.Optional;
-
-import static net.Pandarix.betterarcheology.item.ModItems.TORRENT_TOTEM;
+import dev.emi.trinkets.api.TrinketsApi;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.TridentItem;
 
 @Mixin(TridentItem.class)
 abstract class TridentItemMixin {

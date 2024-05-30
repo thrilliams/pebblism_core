@@ -1,22 +1,16 @@
 package co.aethre.pebblism_core.mixin;
 
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
 import com.kyanite.deeperdarker.util.DDArmorMaterials;
 import com.simibubi.create.content.equipment.armor.NetheriteDivingHandler;
 
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.ItemStack;
-
-import net.minecraft.world.item.TridentItem;
-
-import net.minecraft.world.item.enchantment.TridentRiptideEnchantment;
-
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-//TridentItem
 
 @Mixin(NetheriteDivingHandler.class)
 abstract class NetheriteDivingHandlerMixin {
