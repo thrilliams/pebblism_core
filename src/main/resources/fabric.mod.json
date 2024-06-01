@@ -4,9 +4,7 @@
   "version": "${version}",
   "name": "Pebblism Core",
   "description": "compatability~!",
-  "authors": [
-    "juniper williams"
-  ],
+  "authors": [ "juniper williams" ],
   "contact": {
     "sources": "https://github.com/thrilliams/pebblism_core"
   },
@@ -14,13 +12,10 @@
   "icon": "assets/pebblism_core/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "co.aethre.pebblism_core.PebblismCore"
-    ]
+    "main": [ "co.aethre.pebblism_core.PebblismCore" ],
+    "mixinsquared": [ "co.aethre.pebblism_core.PebblismCoreMixinCanceller" ]
   },
-  "mixins": [
-    "pebblism_core.mixins.json"
-  ],
+  "mixins": [ "pebblism_core.mixins.json" ],
   "depends": {
     "minecraft": "${minecraft_version}",
     "fabricloader": ">=${loader_version}",

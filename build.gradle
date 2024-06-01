@@ -72,6 +72,11 @@ dependencies {
 	modLocalRuntime "earth.terrarium.baubly:baubly-fabric-${minecraft_version}:${baubly_version}"
 	modLocalRuntime "com.teamresourceful.resourcefullib:resourcefullib-fabric-${minecraft_version}:${resourceful_lib_version}"
 
+	// Transmog
+	modImplementation "maven.modrinth:transmog:${trangmog_version}"
+	// Mixin Squared (cursed; i feel such shame to do this)
+	include implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:${mixin_squared_version}"))
+
 	// Development QOL
 	modLocalRuntime "maven.modrinth:lazydfu:${lazydfu_version}"
 	modLocalRuntime "com.terraformersmc:modmenu:${modmenu_version}"

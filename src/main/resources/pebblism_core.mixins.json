@@ -13,6 +13,8 @@
     "TridentItemMixin"
   ],
   "client": [
+    "ItemRendererMixin",
+    "LightmapTextureManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

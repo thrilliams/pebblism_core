@@ -1,5 +1,7 @@
 package co.aethre.pebblism_core;
 
+import eu.midnightdust.lib.config.MidnightConfig;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,5 +24,6 @@ public class PebblismCore implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		MidnightConfig.init(ID, PebblismCoreConfig.class);
 	}
 }
